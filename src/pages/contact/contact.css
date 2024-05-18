@@ -1,19 +1,45 @@
+
+
 .contacts-container {
-    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    background: linear-gradient(to bottom right, #a1c4fd, #c2e9fb);
+    font-family: Arial, sans-serif;
+    padding: 6%;
+    box-sizing: border-box;
 }
 
 .contacts-container h2 {
     text-align: center;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
+    color: #333;
 }
 
 .contact-form {
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: space-between;
+    width: 100%;
+    max-width: 800px;
+    background: white;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+}
+
+.contact-info,
+.social-icons {
+    width: 100%;
+    margin-bottom: 20px;
 }
 
 .contact-info {
-    width: calc(50% - 20px);
+    flex: 1;
 }
 
 .form-group {
@@ -23,16 +49,16 @@
 .form-group label {
     display: block;
     margin-bottom: 5px;
+    color: #333;
 }
 
 .form-group input,
 .form-group textarea {
-    width: calc(100% - 20px);
+    width: 100%;
     padding: 10px;
     font-size: 16px;
     border-radius: 5px;
     border: 1px solid #ccc;
-    box-sizing: border-box; /* Учитываем внутренние отступы и рамку в ширину */
 }
 
 .form-group textarea {
@@ -40,12 +66,12 @@
 }
 
 .social-icons {
-    width: calc(50% - 20px);
     text-align: center;
 }
 
 .social-icons h3 {
     margin-bottom: 10px;
+    color: #333;
 }
 
 .icon-list {
@@ -65,7 +91,7 @@
 }
 
 .send-btn {
-    width: calc(100% - 20px);
+    width: 100%;
     padding: 14px;
     background-color: #2f99ce;
     color: #fff;
@@ -78,4 +104,34 @@
 
 .send-btn:hover {
     background-color: #2980b9;
+}
+
+@media (max-width: 768px) {
+    .contact-form {
+        padding: 10px;
+    }
+
+    .form-group input,
+    .form-group textarea,
+    .send-btn {
+        font-size: 14px;
+    }
+
+    .icon-list a {
+        font-size: 20px;
+        margin: 0 5px;
+    }
+}
+
+@media (max-width: 480px) {
+    .form-group input,
+    .form-group textarea,
+    .send-btn {
+        font-size: 12px;
+    }
+
+    .icon-list a {
+        font-size: 18px;
+        margin: 0 3px;
+    }
 }

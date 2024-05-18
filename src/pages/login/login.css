@@ -1,3 +1,9 @@
+/* login.css */
+body, html, #root {
+    height: 100%;
+    margin: 0;
+}
+
 .app-container {
     display: flex;
     justify-content: center;
@@ -20,12 +26,14 @@
 }
 
 .login-form {
-    width: 400px;
+    width: 90%;
+    max-width: 400px;
     margin: 0 auto;
-    padding: 60px;
+    padding: 60px 20px;
     border: 1px solid #ccc;
     border-radius: 10px;
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.8);
     position: relative;
     z-index: 1;
 }
@@ -72,4 +80,29 @@
 
 .login-form input[type="submit"]:hover {
     background-color: #2980b9;
+}
+
+@media (max-width: 480px) {
+    .login-form {
+        padding: 40px 20px;
+    }
+
+    .login-form h2 {
+        font-size: 1.5rem;
+    }
+
+    .login-form label {
+        font-size: 1rem;
+    }
+
+    .login-form input[type="email"],
+    .login-form input[type="password"] {
+        padding: 10px;
+        font-size: 1rem;
+    }
+
+    .login-form input[type="submit"] {
+        padding: 12px;
+        font-size: 1rem;
+    }
 }
