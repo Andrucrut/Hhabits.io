@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/Hhabits.io/static/css/main.28cc5a65.css",
-    "main.js": "/Hhabits.io/static/js/main.f65dfdf6.js",
+    "main.css": "/Hhabits.io/static/css/main.5a69d1c7.css",
+    "main.js": "/Hhabits.io/static/js/main.edaa3fdf.js",
     "static/js/453.23082a4a.chunk.js": "/Hhabits.io/static/js/453.23082a4a.chunk.js",
     "static/media/Calendar-amico.png": "/Hhabits.io/static/media/Calendar-amico.c289e95f09cb01e31a98.png",
     "static/media/back.png": "/Hhabits.io/static/media/back.10ef8551176b416dec6d.png",
     "static/media/mon.jpg": "/Hhabits.io/static/media/mon.f6a3d7b26eb994e9bf39.jpg",
     "static/media/DROP.png": "/Hhabits.io/static/media/DROP.941f4d1b78f0c7e9afdf.png",
     "index.html": "/Hhabits.io/index.html",
-    "main.28cc5a65.css.map": "/Hhabits.io/static/css/main.28cc5a65.css.map",
-    "main.f65dfdf6.js.map": "/Hhabits.io/static/js/main.f65dfdf6.js.map",
+    "main.5a69d1c7.css.map": "/Hhabits.io/static/css/main.5a69d1c7.css.map",
+    "main.edaa3fdf.js.map": "/Hhabits.io/static/js/main.edaa3fdf.js.map",
     "453.23082a4a.chunk.js.map": "/Hhabits.io/static/js/453.23082a4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.28cc5a65.css",
-    "static/js/main.f65dfdf6.js"
+    "static/css/main.5a69d1c7.css",
+    "static/js/main.edaa3fdf.js"
   ]
 }
