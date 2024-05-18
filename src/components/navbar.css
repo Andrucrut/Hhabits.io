@@ -1,0 +1,145 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    padding: 40px 20px;
+}
+
+.links {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    padding-left: 14px;
+}
+
+.links a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 80px;
+    padding: 5px 10px;
+}
+
+.links a:last-child {
+    margin-right: 0;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+}
+
+.reg-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 4px;
+    display: flex;
+    align-items: center;
+}
+
+.reg-link:hover {
+    background-color: #2f99ce;
+    border-radius: 20px;
+}
+
+.active {
+    background-color: #2f99ce;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    padding: 5px 10px;
+}
+
+.active:hover {
+    background-color: #2980b9;
+}
+
+.login-link {
+    color: #fff;
+    text-decoration: none;
+    padding: 5px 10px;
+    margin-right: 20px;
+    font-size: 19px;
+}
+
+.login-link:hover {
+    background-color: #2f99ce;
+    border-radius: 20px;
+}
+
+.login-link.active {
+    background-color: #2f99ce;
+    border-radius: 20px;
+    color: #fff;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+    padding: 5px 10px;
+}
+
+.login-link.active:hover {
+    background-color: #2980b9;
+}
+
+.vertical-line {
+    height: 30px;
+    width: 1px;
+    background-color: #fff;
+    margin: 0 10px;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .links a {
+        margin-right: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .links {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .links a {
+        margin: 10px 0;
+    }
+
+    .right {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 20px;
+    }
+
+    .vertical-line {
+        display: none;
+    }
+
+    .login-link, .reg-link {
+        margin-right: 0;
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 10px;
+    }
+
+    .links a {
+        margin: 5px 0;
+        font-size: 14px;
+    }
+
+    .login-link, .reg-link {
+        font-size: 14px;
+        padding: 5px;
+    }
+}

@@ -1,0 +1,183 @@
+
+
+.about-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/back.png');
+    padding: 4%;
+    position: relative;
+}
+
+.background-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.drop {
+    position: absolute;
+    left: 27%;
+    top: 5%;
+    width: 15%;
+    height: 8%;
+    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/DROP.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    opacity: 30%;
+}
+
+.step {
+    position: absolute;
+    top: 4%;
+    left: 62%;
+    width: 18%;
+    height: 10%;
+    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/STEP.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    opacity: 30%;
+}
+
+.second-image {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 50%;
+    height: 70%;
+    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/Calendar-amico.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    opacity: 50%;
+}
+
+.firstH,
+.secondH {
+    font-size: 70px;
+    margin-bottom: 40px;
+    color: #121270;
+    z-index: 2;
+    position: relative;
+}
+
+.about-page h2 {
+    font-size: 2rem;
+    margin: 40px 0;
+    z-index: 2;
+    position: relative;
+    color: #121270;
+}
+
+.about-text,
+.two-minute-rule,
+.what-is-it {
+    text-align: center;
+    max-width: 800px;
+    z-index: 2;
+    position: relative;
+    background-color: white;
+    opacity: 55%;
+    border-radius: 15px;
+    width: 800px;
+    height: 130px;
+}
+
+.about-text p,
+.two-minute-rule p,
+.what-is-it p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    z-index: 2;
+    position: relative;
+}
+
+/* Media Queries */
+@media (max-width: 1200px) {
+    .firstH,
+    .secondH {
+        font-size: 3rem;
+    }
+
+    .about-text,
+    .two-minute-rule,
+    .what-is-it {
+        width: 90%;
+        height: auto;
+        padding: 20px;
+    }
+}
+
+@media (max-width: 768px) {
+    .drop, .step, .second-image {
+        width: 25%;
+        height: auto;
+        opacity: 50%;
+    }
+
+    .drop {
+        top: 10%;
+        left: 20%;
+    }
+
+    .step {
+        top: 8%;
+        left: 55%;
+    }
+
+    .second-image {
+        top: 45%;
+        width: 70%;
+    }
+
+    .firstH,
+    .secondH {
+        font-size: 2rem;
+    }
+
+    .about-page h2 {
+        font-size: 1.5rem;
+    }
+
+    .about-text,
+    .two-minute-rule,
+    .what-is-it {
+        width: 100%;
+        max-width: none;
+        padding: 15px;
+    }
+}
+
+@media (max-width: 480px) {
+    .drop, .step, .second-image {
+        display: none;
+    }
+
+    .firstH,
+    .secondH {
+        font-size: 1.5rem;
+        text-align: center;
+    }
+
+    .about-page h2 {
+        font-size: 1.2rem;
+        margin: 20px 0;
+    }
+
+    .about-text,
+    .two-minute-rule,
+    .what-is-it {
+        font-size: 1rem;
+        line-height: 1.4;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}

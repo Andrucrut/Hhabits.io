@@ -1,0 +1,92 @@
+.teoria {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/back.png');
+    padding: 40px;
+    position: relative;
+}
+
+.background-overlaY {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+    z-index: -1;
+}
+
+.Drop {
+    position: absolute;
+    left: 27%;
+    top:5%;
+    width: 320px;
+    height: 100px;
+    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/DROP.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    opacity: 10%;
+}
+
+.Step {
+    position: absolute;
+    top: 5%;
+    left: 61%;
+    width: 372px;
+    height: 100px;
+    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/STEP.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    opacity:10%;
+}
+
+.Second-images {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 700px;
+    height: 700px;
+    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/Calendar-amico.png');
+    background-size: cover;
+    background-position: center;
+    z-index: 1;
+    opacity: 50%;
+}
+
+
+.firstH {
+    font-size: 70px;
+    margin-bottom: 40px;
+    color: #121270;
+    z-index: 2;
+    position: relative;
+}
+.aboutText,
+.SecText{
+    text-align: center;
+    max-width: 900px;
+    z-index: 2;
+    position: relative;
+    background-color: white;
+    opacity : 70%;
+    border-radius: 15px;
+    width: 900px;
+    height: 190px;
+    margin-bottom: 80px;
+}
+
+
+.aboutText p,
+.SecText p{
+    font-size: 1.2rem;
+    line-height: 1.6;
+    z-index: 2;
+    position: relative;
+}
+
+
