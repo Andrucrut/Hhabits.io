@@ -1,0 +1,98 @@
+/* slider.css */
+.habit-slider {
+    margin: 20px auto;
+    max-width: 100%;
+    padding: 0 20px;
+}
+
+.habit-slider {
+    margin: 20px auto;
+    max-width: 90%; /* Устанавливаем максимальную ширину контейнера слайдера */
+    padding: 0 5%; /* Автоматический отступ по бокам */
+}
+
+.habit-slide img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.slick-dots {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.slick-dots li button {
+    font-size: 12px;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: none;
+    background-color: #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.slick-dots li.slick-active button {
+    background-color: #121270;
+}
+
+body {
+    background-color: #ff7f0e;
+}
+
+.habit-description {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.habit-description p {
+    margin-bottom: 10px;
+}
+
+.habit-description button {
+    background-color: #121270;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.habit-description button:hover {
+    background-color: #0d0d5e;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .habit-slide {
+        padding: 10px; /* Уменьшим отступы для маленьких экранов */
+    }
+
+    .habit-slide img {
+        border-radius: 0; /* Уберем скругления у изображений для мобильных устройств */
+    }
+
+    .slick-dots {
+        margin-top: 10px; /* Уменьшим отступ для точек слайдера на маленьких экранах */
+    }
+
+    .slick-dots li button {
+        width: 8px;
+        height: 8px;
+        font-size: 10px; /* Уменьшим размер точек слайдера для мобильных устройств */
+    }
+}
