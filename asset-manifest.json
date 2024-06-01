@@ -1,19 +1,26 @@
 {
   "files": {
-    "main.css": "/Hhabits.io/static/css/main.2a5f2ee0.css",
-    "main.js": "/Hhabits.io/static/js/main.3d8e9a46.js",
+    "main.css": "/Hhabits.io/static/css/main.a3fa2b0d.css",
+    "main.js": "/Hhabits.io/static/js/main.b33aa9db.js",
     "static/js/453.23082a4a.chunk.js": "/Hhabits.io/static/js/453.23082a4a.chunk.js",
+    "static/media/med.png": "/Hhabits.io/static/media/med.0ba9036507deec56c8d5.png",
+    "static/media/read.jpg": "/Hhabits.io/static/media/read.5d13bb7246ccaa4b251a.jpg",
     "static/media/Calendar-amico.png": "/Hhabits.io/static/media/Calendar-amico.c289e95f09cb01e31a98.png",
     "static/media/back.png": "/Hhabits.io/static/media/back.10ef8551176b416dec6d.png",
+    "static/media/hard.jpg": "/Hhabits.io/static/media/hard.355a66fe2b7ceaf5fbb1.jpg",
     "static/media/mon.jpg": "/Hhabits.io/static/media/mon.f6a3d7b26eb994e9bf39.jpg",
     "static/media/DROP.png": "/Hhabits.io/static/media/DROP.941f4d1b78f0c7e9afdf.png",
+    "static/media/slick.svg": "/Hhabits.io/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/Hhabits.io/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/Hhabits.io/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/Hhabits.io/static/media/slick.295183786cd8a1389865.woff",
     "index.html": "/Hhabits.io/index.html",
-    "main.2a5f2ee0.css.map": "/Hhabits.io/static/css/main.2a5f2ee0.css.map",
-    "main.3d8e9a46.js.map": "/Hhabits.io/static/js/main.3d8e9a46.js.map",
+    "main.a3fa2b0d.css.map": "/Hhabits.io/static/css/main.a3fa2b0d.css.map",
+    "main.b33aa9db.js.map": "/Hhabits.io/static/js/main.b33aa9db.js.map",
     "453.23082a4a.chunk.js.map": "/Hhabits.io/static/js/453.23082a4a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a5f2ee0.css",
-    "static/js/main.3d8e9a46.js"
+    "static/css/main.a3fa2b0d.css",
+    "static/js/main.b33aa9db.js"
   ]
 }
