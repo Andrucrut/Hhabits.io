@@ -3,7 +3,7 @@
     flex-direction: column;
     align-items: center;
     height: 100vh;
-    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/back.png');
+    background-image: url('../../image/back.png');
     padding: 4%;
     position: relative;
 }
@@ -24,7 +24,7 @@
     top: 5%;
     width: 10%;
     height: auto;
-    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/DROP.png');
+    background-image: url('../../image/DROP.png');
     background-size: cover;
     background-position: center;
     z-index: 2;
@@ -37,7 +37,7 @@
     left: 80%;
     width: 10%;
     height: auto;
-    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/STEP.png');
+    background-image: url('../../image/STEP.png');
     background-size: cover;
     background-position: center;
     z-index: 2;
@@ -51,7 +51,7 @@
     transform: translate(-50%, -50%);
     width: 30%;
     height: auto;
-    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/Calendar-amico.png');
+    background-image: url('../../image/Calendar-amico.png');
     background-size: cover;
     background-position: center;
     z-index: 1;

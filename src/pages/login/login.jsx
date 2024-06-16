@@ -1,44 +1,63 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import axios from 'axios';
-import "./login.css";
+import './login.css';
 
-const LoginForm = () => {
-    const [email, setEmail] = useState('');
+import { sendLoginRequest } from '../../services/auth_requests';
+import ErrorMessage from '../../components/ErrorMessage';
+
+const LoginForm = ({ onLogin }) => {
+    const [login, setLogin] = useState('');
     const [password, setPassword] = useState('');
-    const [error, setError] = useState('');
+    const [loginError, setLoginError] = useState('');
     const navigate = useNavigate();
 
-    const handleSubmit = async (e) => {
+    const handleSubmit = (e) => {
         e.preventDefault();
+        setLoginError('');
 
-        try {
-            const response = await axios.post('http://localhost:5000/api/login', { email, password });
-            console.log('User logged in:', response.data);
-            setError('');
-            // Сохраните токен в локальном хранилище или в состоянии
-            localStorage.setItem('token', response.data.token);
-            // Перенаправить пользователя на домашнюю страницу или другую страницу
-            navigate('/');
-        } catch (err) {
-            setError(err.response.data.message || 'An error occurred');
-        }
+        sendLoginRequest(login, password)
+            .then(() => {
+                // Вызываем функцию onLogin для установки состояния входа
+                onLogin();
+                // Перенаправляем пользователя на главную страницу
+                navigate('/');
+            })
+            .catch((err) => {
+                // Обрабатываем ошибку входа
+                setLoginError(err.message);
+            });
     };
 
     return (
         <div className="app-container">
             <div className="login-form">
                 <h2>Login</h2>
-                {error && <p className="error">{error}</p>}
                 <form onSubmit={handleSubmit}>
                     <label htmlFor="email">Email:</label>
-                    <input type="email" id="email" name="email" placeholder="Email" value={email} onChange={(e) => setEmail(e.target.value)} required />
+                    <input
+                        type="email"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        value={login}
+                        onChange={(e) => setLogin(e.target.value)}
+                        required
+                    />
 
                     <label htmlFor="password">Password:</label>
-                    <input type="password" id="password" name="password" placeholder="Password" value={password} onChange={(e) => setPassword(e.target.value)} required />
+                    <input
+                        type="password"
+                        id="password"
+                        name="password"
+                        placeholder="Password"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                    />
 
                     <input type="submit" value="Login" />
                 </form>
+                <ErrorMessage error={loginError} />
             </div>
         </div>
     );

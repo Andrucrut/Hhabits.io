@@ -21,7 +21,7 @@ const RegistrationForm = () => {
     const handleSubmit = (e) => {
         e.preventDefault();
         setLoginError('');
-        sendRegisterRequest(login, password).then(() => navigate("/"), err => setLoginError(err.message));
+        sendRegisterRequest(login, password).then(() => navigate("/main"), err => setLoginError(err.message));
     };
 
     return (

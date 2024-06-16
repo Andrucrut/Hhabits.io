@@ -88,11 +88,11 @@
     background-color: #2980b9;
 }
 
-.vertical-line {
-    height: 30px;
-    width: 1px;
-    background-color: #fff;
-    margin: 0 10px;
+
+.logReg {
+    display: flex;
+    align-items: center;
+    color: white;
 }
 
 /* Media Queries */
@@ -157,4 +157,11 @@
         font-size: 14px;
         padding: 5px;
     }
+}
+
+.aut {
+    display: flex;
+    align-items: center;
+    color: white;
+    gap: 15px;
 }

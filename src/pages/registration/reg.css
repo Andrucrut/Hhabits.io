@@ -8,7 +8,7 @@ body, html, #root {
     justify-content: center;
     align-items: center;
     min-height: calc(100vh - 80px); /* Учитываем высоту navbar */
-    background-image: url('/Users/andrey/WebstormProjects/habits/src/image/mon.jpg');
+    background-image: url('../../image/mon.jpg');
     background-size: cover;
     background-position: center;
     position: relative;

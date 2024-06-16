@@ -24,7 +24,6 @@ const AboutPage = () => {
                 </p>
             </div>
             {/* Добавляем компонент слайдера */}
-            <HabitSlider />
         </div>
     );
 };
