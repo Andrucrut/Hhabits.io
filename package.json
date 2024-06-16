@@ -1,4 +1,5 @@
 {
+  "homepage": "https://andrucrut.github.io",
   "name": "itmo_project",
   "version": "0.1.0",
   "private": true,
@@ -15,6 +16,7 @@
     "react-scripts": "5.0.1",
     "react-slick": "^0.30.2",
     "redux": "^5.0.1",
+    "slick-carousel": "^1.8.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
